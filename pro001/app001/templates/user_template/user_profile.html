@@ -1,0 +1,8 @@
+{% extends 'user_template/base_template.html' %}
+{% load static %}
+{% block content %}
+
+<label>Name : </label>
+<input type="text" value="{{ user.cuser.name }}">
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base_home_html/base_template.html' %}
+{% load static %}
+{% block content %}
+
+<div class="d-flex justify-content-around">
+  <div class="align-self-center">
+        <div class="register-box">
+          <div class="card">
+            <div class="card-body register-card-body">
+              <h2><p class="login-box-msg">Sign<strong>Up</strong></p></h2>
+              <p class="login-box-msg" ><a href="{% url 'login_page' %}" style="font-style: italic;" class="login-box-msg">Already have an Account <strong>-></strong></a></p>
+              <div class="  ">
+                  {% url 'add_user' as action_path %}
+                  {% include 'signin_login/form_template.html' with messages=messages form=form action_path=action_path button_text="Register" %}
+              </div>
+              
+            </div>
+            <!-- /.form-box -->
+          </div><!-- /.card -->
+        </div>
+        <!-- /.register-box -->
+      </div>
+    </div>
+
+{% endblock %}
+
+<!-- jQuery -->
+{% block custom_js %}
+
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+{% endblock custom_js %}

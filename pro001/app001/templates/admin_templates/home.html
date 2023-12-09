@@ -1,0 +1,23 @@
+{% extends 'admin_templates/base_template.html' %}
+{% load static %}
+{% block content %}
+<div class="shadow-lg p-1 mb-5 bg-white rounded"> 
+
+    
+  
+
+     
+</div>
+
+
+
+{% endblock %}
+
+{% block custom_js %}
+
+<script>
+    document.querySelector(".navbar-btn").onclick=function(){
+    document.querySelector(".navbar-items").classList.toggle("hide");
+  }
+</script>
+{% endblock custom_js %}

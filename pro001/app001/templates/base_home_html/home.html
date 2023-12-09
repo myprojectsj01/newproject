@@ -1,0 +1,232 @@
+{% extends 'base_home_html/base_template.html' %}
+{% load static %}
+{% block content %}
+ 
+<!--###Gowizard###-->
+        <!--home image bulding-->
+<div class="card bg-dark text-white" style="max-width: 10000px;">
+                <a href="/"><img src="{% static 'aimage/business.jpg' %}" class="card-img" alt="buildings"/>
+                <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
+                    <h1 style="text-align:center;color: #5C88F2;font-size:50px;font-style: italic;">Go<strong>Wizard</strong></h1>
+                    <p style="text-align:center;color:#d6bfbf;font-size:20px;font-style: oblique;">This site take your Business to online</p>      
+                </div></a>
+        <!--/home image bulding-->
+</div>
+ 
+        <!--1--> 
+        
+       
+            <div class="card-body">
+            <div class="row">
+        <!--Agriculture-->
+                    <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                            <div class="card mb-2 bg-gradient-dark">
+                                <a href="{% url 'agri_page' %}" class="text-blue">
+                                    <img class="img-fluid rounded-4 shadow-2-strong" src="{% static 'aimage/Agri1.jpg' %}" alt="agriculture">
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                        <h1 style="text-align:center;height: 150px;font-family:'Courier New', Courier, monospace;color:#1e1d1da8;font-size:50px;font-style:oblique ;">Agriculture</h1>
+                                        <!--<p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                        -->
+                                    </div> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+        <!--Fitness-->
+                    <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                            <div class="card mb-2 bg-gradient-dark">
+                                <a href="{% url 'fitness_page' %}" class="text-blue">
+                                    <img class="img-fluid rounded-4 shadow-2-strong" src="{% static 'aimage/fit3.jpg' %}" alt="fitness"> 
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                        <h1 style="text-align:center;height: 160px;font-family:'Courier New', Courier, monospace;color:#fffefe;font-size:50px;font-style:oblique ;">Fitness</h1>
+                                        <!--<p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                        -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        <!--Home Services-->
+                    <div class="col-md-12 col-lg-6 col-xl-4">
+                        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                            <div class="card mb-2 bg-gradient-dark">
+                                <a href="{% url 'homeservice_page' %}" class="text-blue">
+                                    <img class="img-fluid rounded-4 shadow-2-strong" src="{% static 'aimage/service1.jpg' %}" alt="homeservices">              
+                                    <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                        <h1 style="text-align:center;height: 150px;font-family:'Courier New', Courier, monospace;color:#ff000988;font-size:50px;font-style:oblique ;">Home Services</h1>
+                                        <!--<p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                        -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+      
+        <!--/1-->
+
+        <!--2-->
+       
+        
+                    <div class="card-body">
+                        <div class="row">
+        <!--Foods-->
+                            <div class="col-md-12 col-lg-6 col-xl-4">
+                                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                                    <div class="card mb-2 bg-gradient-dark">
+                                        <a href="{% url 'food_page' %}" class="text-white">
+                                            <img class="img-fluid rounded-4 shadow-2-strong" src="{% static 'aimage/food1.jpg' %}" alt="Foods">  
+                                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                                <h1 style="text-align:center;height: 150px;font-family:Verdana, Geneva, Tahoma, sans-serif;color:#ffffff;font-size:50px;font-style:oblique ;">Food</h1>
+                                                <!--<p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                -->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                <!--Tech Services-->
+                            <div class="col-md-12 col-lg-6 col-xl-4">
+                                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                                    <div class="card mb-2 bg-gradient-dark">
+                                            <a href="#" class="text-white">
+                                                <img class="img-fluid rounded-4 shadow-2-strong" src="{% static 'aimage/techservices1.jpg' %}" alt="Services">
+                                            
+                                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                                    <h1 style="text-align:center;height: 150px;font-family:'Courier New', Courier, monospace;color:#0000dec5;font-size:50px;font-style:oblique ;"> Tech Services</h1>
+                                                    <!--<p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                    -->
+                                                </div>
+                                            </a>
+                                    </div>
+                                </div> 
+                            </div>
+                <!--Teaching-->
+                            <div class="col-md-12 col-lg-6 col-xl-4">
+                                <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                                    <div class="card mb-2 bg-gradient-dark">
+                                        <a href="#" class="text-white">
+                                            <img class="img-fluid rounded-4 shadow-2-strong" src="{% static 'aimage/teaching1.jpg' %}" alt="Teaching">
+                                        
+                                            <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                                <h1 style="text-align:center;height: 150px;font-family:'Courier New', Courier, monospace;color:#ffffff;font-size:50px;font-style:oblique ;">Teaching</h1>
+                                                <!--<p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                                -->
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+
+
+        <!--/2-->
+
+        <!--3-->
+        
+  
+                <div class="card-body">
+                    <div class="row">
+            <!--Travels-->
+                    <center>  
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            <div class="shadow-lg p-3 mb-5 bg-white rounded"> 
+                                <div class="card mb-2 bg-gradient-dark">
+                                    <a href="#" class="text-white">
+                                        <img class="img-fluid rounded-4 shadow-2-strong" src="{% static 'aimage/Travel.jpg' %}" alt="Travels">
+                                    
+                                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                            <h1 style="text-align:center;height: 150px;font-family:'Courier New', Courier, monospace;color:#e8e8e8;font-size:50px;font-style:oblique ;">Travels</h1>
+                                            <!--<p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor.</p>
+                                            -->
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
+                        <!--others
+                        <div class="col-md-12 col-lg-6 col-xl-4">
+                            
+                            <div class="card mb-2 bg-gradient-dark">
+                                <a href="#" class="text-white">
+                                    <img class="card-img-top" src="{% static 'aimage/teaching1.jpg' %}" alt="Foods">
+                                </a>
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h1 class="card-title text-primary text-white">Teaching</h1>
+                                
+                                </div>
+                            </div>
+                        </div>-->
+
+                    </div>
+                </div>
+    
+    
+        <!--/3-->
+        <!--###CONTACT###-->
+        
+            <!-- Content Wrapper. Contains page content -->
+       
+
+            <!-- Main content -->
+            <section class="content">
+
+                <!-- Default box -->
+                <div class="card">
+                    <div class="card-body row">
+                    <div class="col-5 text-center d-flex align-items-center justify-content-center">
+                        <div class="">
+                        <h2><strong></strong></h2>
+                        <p class="lead mb-5"><br>
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="form-group">
+                        <label for="inputName">Name</label>
+                        <input type="text" id="inputName" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                        <label for="inputEmail">E-Mail</label>
+                        <input type="email" id="inputEmail" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                        <label for="inputSubject">Subject</label>
+                        <input type="text" id="inputSubject" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea id="inputMessage" class="form-control" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                        <a href="#"> <input type="submit" class="btn btn-primary" value="Send message"></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- /.content -->
+        </div>
+ 
+
+
+
+{% endblock %}
+
+{% block custom_js %}
+
+<script>
+  document.querySelector(".navbar-btn").onclick=function(){
+      document.querySelector(".navbar-items").classList.toggle("hide");
+  }
+</script>
+{% endblock custom_js %}
